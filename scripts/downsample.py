@@ -1,7 +1,12 @@
 
 
 def sample(data, num_of_sents, out):
-
+    """
+    Saves a specified number of lines in a given directory
+    @param data: path/to/file
+    @param num_of_sents: int - number of lines to sample
+    @param out: path/to/save
+    """
     counter = 0
     with open(data, 'r', encoding='utf-8') as f:
         sents = f.readlines()
@@ -13,8 +18,8 @@ def sample(data, num_of_sents, out):
 
 
 def main():
-    sample('../data/train.nl-en.en', 100000, '../data/subsampled/train.nl-en-en')
-    sample('../data/train.en-nl.nl', 100000, '../data/subsampled/trainen-nl.nl')
+    sample('../data/train.nl-en.en', 100000, '../data/subsampled/train.en')
+    sample('../data/train.en-nl.nl', 100000, '../data/subsampled/train.nl')
 
 if __name__ == '__main__':
     main()
