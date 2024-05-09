@@ -1,21 +1,21 @@
-name: "transformer_word"
+name: "transformer_bpe2k"
 joeynmt_version: "2.0.0"
 
 
 data:
-    train: "data/subsampled/train"
-    dev:   "data/dev.test/dev"
-    test:  "data/dev.test/test"
+    train: "data/subsampled/train.2k.BPE"
+    dev:   "data/dev.test/dev.2k.BPE"
+    test:  "data/dev.test/test.2k.BPE"
     dataset_type: "plain"
     src:
         lang: "nl"
-        level: "word"
+        level: "bpe"
         lowercase: False
         max_sent_length: 100
         # either use a vocabulary limit:
-        voc_limit: 2000
+#        voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
-#        voc_file : "?"
+        voc_file : "data/joint_vocab2k.txt"
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
@@ -23,13 +23,13 @@ data:
             codes: "data/codes2000.bpe"
     trg: 
         lang: "en"
-        level: "word"
+        level: "bpe"
         lowercase: False
         max_sent_length: 100
         # either use a vocabulary limit:
-        voc_limit: 2000
+#        voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
-#        voc_file : "?"
+        voc_file : "data/joint_vocab2k.txt"
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
@@ -58,7 +58,7 @@ training:
     validation_freq: 500
     logging_freq: 100
     eval_metric: "bleu"
-    model_dir: "models/transformer_word"
+    model_dir: "?"
     overwrite: False
     shuffle: True
     use_cuda: True
@@ -72,7 +72,7 @@ model:
     init_gain: 1.0
     embed_initializer: "xavier_uniform"
     embed_init_gain: 1.0
-    tied_embeddings: False
+    tied_embeddings: True
     tied_softmax: True
     encoder:
         type: "transformer"

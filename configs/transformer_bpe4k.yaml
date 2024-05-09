@@ -1,40 +1,40 @@
-name: "transformer_word"
+name: "transformer_bpe4k"
 joeynmt_version: "2.0.0"
 
 
 data:
-    train: "data/subsampled/train"
-    dev:   "data/dev.test/dev"
-    test:  "data/dev.test/test"
+    train: "data/subsampled/train.4k.BPE"
+    dev:   "data/dev.test/dev.4k.BPE"
+    test:  "data/dev.test/test.4k.BPE"
     dataset_type: "plain"
     src:
         lang: "nl"
-        level: "word"
+        level: "bpe"
         lowercase: False
         max_sent_length: 100
         # either use a vocabulary limit:
-        voc_limit: 2000
+#        voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
-#        voc_file : "?"
+        voc_file : "data/joint_vocab4k.txt"
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
-            num_merges: 2000
-            codes: "data/codes2000.bpe"
-    trg: 
+            num_merges: 4000
+            codes: "data/codes4000.bpe"
+    trg:
         lang: "en"
-        level: "word"
+        level: "bpe"
         lowercase: False
         max_sent_length: 100
         # either use a vocabulary limit:
-        voc_limit: 2000
+#        voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
-#        voc_file : "?"
+        voc_file : "data/joint_vocab4k.txt"
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
-            num_merges: 2000
-            codes: "data/codes2000.bpe"
+            num_merges: 4000
+            codes: "data/codes4000.bpe"
 
 testing:
     beam_size: 5
@@ -58,7 +58,7 @@ training:
     validation_freq: 500
     logging_freq: 100
     eval_metric: "bleu"
-    model_dir: "models/transformer_word"
+    model_dir: "?"
     overwrite: False
     shuffle: True
     use_cuda: True
@@ -72,7 +72,7 @@ model:
     init_gain: 1.0
     embed_initializer: "xavier_uniform"
     embed_init_gain: 1.0
-    tied_embeddings: False
+    tied_embeddings: True
     tied_softmax: True
     encoder:
         type: "transformer"
