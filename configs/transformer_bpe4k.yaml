@@ -15,7 +15,7 @@ data:
         # either use a vocabulary limit:
 #        voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
-        voc_file : "data/joint_vocab4k.txt"
+        voc_file : "data/joint_vocab4k_clean.txt"
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
@@ -29,7 +29,7 @@ data:
         # either use a vocabulary limit:
 #        voc_limit: ?
         # or (= not both!) a file with a vocabulary built before starting the training:
-        voc_file : "data/joint_vocab4k.txt"
+        voc_file : "data/joint_vocab4k_clean.txt"
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
