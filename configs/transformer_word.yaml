@@ -16,11 +16,8 @@ data:
         voc_limit: 2000
         # or (= not both!) a file with a vocabulary built before starting the training:
 #        voc_file : "?"
-        tokenizer_type: "subword-nmt"
-        tokenizer_cfg:
-            pretokenizer: "none"
-            num_merges: 2000
-            codes: "data/codes2000.bpe"
+        tokenizer_type: "moses"
+
     trg: 
         lang: "en"
         level: "word"
@@ -30,11 +27,7 @@ data:
         voc_limit: 2000
         # or (= not both!) a file with a vocabulary built before starting the training:
 #        voc_file : "?"
-        tokenizer_type: "subword-nmt"
-        tokenizer_cfg:
-            pretokenizer: "none"
-            num_merges: 2000
-            codes: "data/codes2000.bpe"
+        tokenizer_type: "moses"
 
 testing:
     beam_size: 5
