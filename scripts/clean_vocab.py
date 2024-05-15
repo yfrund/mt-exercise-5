@@ -1,3 +1,14 @@
+import argparse
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--input", type=str, nargs="+", help="Path to vocabulary files whose frequencies need to be removed", required=True)
+    parser.add_argument("--output", type=str, nargs="+", help="Path to save clean vocabulary files", required=True)
+
+    args = parser.parse_args()
+
+    return args
 
 def remove_frequencies(infile, out):
     with open(infile, 'r', encoding='utf-8') as i:
@@ -7,8 +18,10 @@ def remove_frequencies(infile, out):
                 o.write(line.split()[0]+'\n')
 
 def main():
-    remove_frequencies('../data/joint_vocab2k.txt', '../data/joint_vocab2k_clean.txt')
-    remove_frequencies('../data/joint_vocab4k.txt', '../data/joint_vocab4k_clean.txt')
+    args = parse_args()
+
+    for infile, outfile in zip(args.input, args.output):
+        remove_frequencies(infile, outfile)
 
 if __name__ == '__main__':
     main()
