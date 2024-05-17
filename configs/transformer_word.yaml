@@ -12,10 +12,10 @@ data:
         level: "word"
         lowercase: False
         max_sent_length: 100
-        # either use a vocabulary limit:
+        #for training:
         voc_limit: 2000
-        # or (= not both!) a file with a vocabulary built before starting the training:
-#        voc_file : "?"
+        #for testing:
+#        voc_file: "models/transformer_word/src_vocab.txt"
         tokenizer_type: "moses"
 
     trg: 
@@ -23,15 +23,16 @@ data:
         level: "word"
         lowercase: False
         max_sent_length: 100
-        # either use a vocabulary limit:
+        #for training:
         voc_limit: 2000
-        # or (= not both!) a file with a vocabulary built before starting the training:
-#        voc_file : "?"
+        #for testing:
+#        voc_file: "models/transformer_word/trg_vocab.txt"
         tokenizer_type: "moses"
 
 testing:
     beam_size: 5
     alpha: 1.0
+    eval_metrics: ["bleu"]
 
 training:
     random_seed: 42
