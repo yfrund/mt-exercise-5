@@ -1,0 +1,118 @@
+2024-05-17 15:36:44,310 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2024-05-17 15:36:44,311 - INFO - joeynmt.data - Building tokenizer...
+2024-05-17 15:36:44,355 - INFO - joeynmt.tokenizers - nl tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 15:36:44,355 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 15:36:44,356 - INFO - joeynmt.data - Building vocabulary...
+2024-05-17 15:36:44,587 - INFO - joeynmt.data - Loading dev set...
+2024-05-17 15:36:44,643 - INFO - joeynmt.data - Loading test set...
+2024-05-17 15:36:44,697 - INFO - joeynmt.data - Data loaded.
+2024-05-17 15:36:44,699 - INFO - joeynmt.data - Train dataset: None
+2024-05-17 15:36:44,702 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=1003, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 15:36:44,703 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1777, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 15:36:44,704 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 15:36:44,705 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 15:36:44,705 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2003
+2024-05-17 15:36:44,706 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2003
+2024-05-17 15:36:44,706 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-05-17 15:36:45,031 - INFO - joeynmt.model - Enc-dec model built.
+2024-05-17 15:37:48,943 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2024-05-17 15:37:48,944 - INFO - joeynmt.data - Building tokenizer...
+2024-05-17 15:37:48,967 - INFO - joeynmt.tokenizers - nl tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 15:37:48,968 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 15:37:48,968 - INFO - joeynmt.data - Building vocabulary...
+2024-05-17 15:37:49,114 - INFO - joeynmt.data - Loading dev set...
+2024-05-17 15:37:49,123 - INFO - joeynmt.data - Loading test set...
+2024-05-17 15:37:49,139 - INFO - joeynmt.data - Data loaded.
+2024-05-17 15:37:49,139 - INFO - joeynmt.data - Train dataset: None
+2024-05-17 15:37:49,140 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=1003, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 15:37:49,141 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1777, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 15:37:49,142 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 15:37:49,144 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 15:37:49,145 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2003
+2024-05-17 15:37:49,147 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2003
+2024-05-17 15:37:49,148 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-05-17 15:37:49,326 - INFO - joeynmt.model - Enc-dec model built.
+2024-05-17 15:58:29,250 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2024-05-17 15:58:29,251 - INFO - joeynmt.data - Building tokenizer...
+2024-05-17 15:58:29,268 - INFO - joeynmt.tokenizers - nl tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 15:58:29,269 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 15:58:29,269 - INFO - joeynmt.data - Building vocabulary...
+2024-05-17 15:58:29,417 - INFO - joeynmt.data - Loading dev set...
+2024-05-17 15:58:29,429 - INFO - joeynmt.data - Loading test set...
+2024-05-17 15:58:29,442 - INFO - joeynmt.data - Data loaded.
+2024-05-17 15:58:29,443 - INFO - joeynmt.data - Train dataset: None
+2024-05-17 15:58:29,444 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=1003, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 15:58:29,444 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1777, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 15:58:29,445 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 15:58:29,445 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 15:58:29,446 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2003
+2024-05-17 15:58:29,446 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2003
+2024-05-17 15:58:29,447 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-05-17 15:58:29,633 - INFO - joeynmt.model - Enc-dec model built.
+2024-05-17 16:02:20,316 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2024-05-17 16:02:20,317 - INFO - joeynmt.data - Building tokenizer...
+2024-05-17 16:02:20,332 - INFO - joeynmt.tokenizers - nl tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 16:02:20,332 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 16:02:20,333 - INFO - joeynmt.data - Building vocabulary...
+2024-05-17 16:02:20,478 - INFO - joeynmt.data - Loading dev set...
+2024-05-17 16:02:20,487 - INFO - joeynmt.data - Loading test set...
+2024-05-17 16:02:20,501 - INFO - joeynmt.data - Data loaded.
+2024-05-17 16:02:20,502 - INFO - joeynmt.data - Train dataset: None
+2024-05-17 16:02:20,503 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=1003, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 16:02:20,503 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1777, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 16:02:20,503 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 16:02:20,504 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 16:02:20,504 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2003
+2024-05-17 16:02:20,505 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2003
+2024-05-17 16:02:20,505 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-05-17 16:02:20,658 - INFO - joeynmt.model - Enc-dec model built.
+2024-05-17 16:02:20,826 - INFO - joeynmt.helpers - Load model from /mnt/c/Users/Yuliia/Desktop/Y3S6/machine_translation/mt-2024-ex05/mt-exercise-5/models/transformer_bpe2k/91500.ckpt.
+2024-05-17 16:02:20,841 - INFO - joeynmt.prediction - Model(
+	encoder=TransformerEncoder(num_layers=4, num_heads=2, alpha=1.0, layer_norm="pre", activation=ReLU()),
+	decoder=TransformerDecoder(num_layers=1, num_heads=2, alpha=1.0, layer_norm="post", activation=ReLU()),
+	src_embed=Embeddings(embedding_dim=256, vocab_size=2003),
+	trg_embed=Embeddings(embedding_dim=256, vocab_size=2003),
+	loss_function=None)
+2024-05-17 16:02:20,848 - INFO - joeynmt.prediction - Decoding on dev set...
+2024-05-17 16:02:20,849 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2024-05-17 16:02:20,849 - INFO - joeynmt.prediction - Predicting 1003 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2024-05-17 17:25:40,970 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2024-05-17 17:25:40,972 - INFO - joeynmt.data - Building tokenizer...
+2024-05-17 17:25:41,039 - INFO - joeynmt.tokenizers - nl tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 17:25:41,040 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-17 17:25:41,041 - INFO - joeynmt.data - Building vocabulary...
+2024-05-17 17:25:41,376 - INFO - joeynmt.data - Loading dev set...
+2024-05-17 17:25:41,406 - INFO - joeynmt.data - Loading test set...
+2024-05-17 17:25:41,440 - INFO - joeynmt.data - Data loaded.
+2024-05-17 17:25:41,441 - INFO - joeynmt.data - Train dataset: None
+2024-05-17 17:25:41,442 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=1003, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 17:25:41,442 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1777, src_lang=nl, trg_lang=en, has_trg=True, random_subset=-1)
+2024-05-17 17:25:41,443 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 17:25:41,443 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) en (6) een (7) het (8) van (9) is
+2024-05-17 17:25:41,444 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2003
+2024-05-17 17:25:41,448 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2003
+2024-05-17 17:25:41,450 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-05-17 17:25:41,832 - INFO - joeynmt.model - Enc-dec model built.
+2024-05-17 17:25:42,164 - INFO - joeynmt.helpers - Load model from /mnt/c/Users/Yuliia/Desktop/Y3S6/machine_translation/mt-2024-ex05/mt-exercise-5/models/transformer_bpe2k/best.ckpt.
+2024-05-17 17:25:42,188 - INFO - joeynmt.prediction - Model(
+	encoder=TransformerEncoder(num_layers=4, num_heads=2, alpha=1.0, layer_norm="pre", activation=ReLU()),
+	decoder=TransformerDecoder(num_layers=1, num_heads=2, alpha=1.0, layer_norm="post", activation=ReLU()),
+	src_embed=Embeddings(embedding_dim=256, vocab_size=2003),
+	trg_embed=Embeddings(embedding_dim=256, vocab_size=2003),
+	loss_function=None)
+2024-05-17 17:25:42,193 - INFO - joeynmt.prediction - Decoding on dev set...
+2024-05-17 17:25:42,194 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2024-05-17 17:25:42,197 - INFO - joeynmt.prediction - Predicting 1003 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2024-05-17 18:49:56,626 - WARNING - sacrebleu - That's 100 lines that end in a tokenized period ('.')
+2024-05-17 18:49:56,626 - WARNING - sacrebleu - It looks like you forgot to detokenize your test data, which may hurt your score.
+2024-05-17 18:49:56,627 - WARNING - sacrebleu - If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+2024-05-17 18:49:56,647 - INFO - joeynmt.metrics - nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.4.2
+2024-05-17 18:49:56,648 - INFO - joeynmt.prediction - Evaluation result (beam search) bleu:  48.08, generation: 5053.5090[sec], evaluation: 0.8764[sec]
+2024-05-17 18:49:56,648 - INFO - joeynmt.prediction - Decoding on test set...
+2024-05-17 18:49:56,649 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2024-05-17 18:49:56,649 - INFO - joeynmt.prediction - Predicting 1777 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2024-05-17 20:40:30,306 - WARNING - sacrebleu - That's 100 lines that end in a tokenized period ('.')
+2024-05-17 20:40:30,306 - WARNING - sacrebleu - It looks like you forgot to detokenize your test data, which may hurt your score.
+2024-05-17 20:40:30,307 - WARNING - sacrebleu - If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+2024-05-17 20:40:30,335 - INFO - joeynmt.metrics - nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.4.2
+2024-05-17 20:40:30,336 - INFO - joeynmt.prediction - Evaluation result (beam search) bleu:  52.41, generation: 6632.3351[sec], evaluation: 1.2619[sec]
