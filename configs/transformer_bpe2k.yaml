@@ -3,9 +3,9 @@ joeynmt_version: "2.0.0"
 
 
 data:
-    train: "data/subsampled/train.2k.BPE"
-    dev:   "data/dev.test/dev.2k.BPE"
-    test:  "data/dev.test/test.2k.BPE"
+    train: "data/subsampled/train"
+    dev:   "data/dev.test/dev"
+    test:  "data/dev.test/test"
     dataset_type: "plain"
     src:
         lang: "nl"
@@ -39,7 +39,7 @@ data:
 testing:
     beam_size: 5
     alpha: 1.0
-    eval_metrics: ["bleu"]
+
 
 training:
     random_seed: 42
