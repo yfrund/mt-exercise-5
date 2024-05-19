@@ -3,9 +3,9 @@ joeynmt_version: "2.0.0"
 
 
 data:
-    train: "data/subsampled/train.2k.BPE"
-    dev:   "data/dev.test/dev.2k.BPE"
-    test:  "data/dev.test/test.2k.BPE"
+    train: "data/subsampled/train"
+    dev:   "data/dev.test/dev"
+    test:  "data/dev.test/test"
     dataset_type: "plain"
     src:
         lang: "nl"
@@ -39,11 +39,9 @@ data:
 testing:
     beam_size: 5
     alpha: 1.0
+    eval_metrics: ["bleu"]
 
 training:
-    load_model: "models/transformer_bpe2k/65000.ckpt"
-    src_vocab: "models/transformer_bpe2k/src_vocab.txt"
-    trg_vocab: "models/transformer_bpe2k/trg_vocab.txt"
     random_seed: 42
     optimizer: "adam"
     normalization: "tokens"
@@ -57,11 +55,11 @@ training:
     weight_decay: 0.0
     decrease_factor: 0.7
     early_stopping_metric: "ppl"
-    epochs: 3
+    epochs: 10
     validation_freq: 500
     logging_freq: 100
     eval_metric: "bleu"
-    model_dir: "../drive/MyDrive/models/transformer_bpe2k"
+    model_dir: "../drive/MyDrive/mt-ex05/models/new/transformer_bpe2k"
     overwrite: False
     shuffle: True
     use_cuda: True
