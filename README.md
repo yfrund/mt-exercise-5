@@ -58,12 +58,6 @@ Evaluate a trained model with
 
     ./scripts/evaluate.sh
 
-Test a trained model with
-
-    ./scripts/test.sh
-
-This will create a test log in models/model_name. Remember to provide vocabulary files in your model configuration file!
-
 Create translations and log files with varying beam sizes:
 
     ./scripts/translate.sh
