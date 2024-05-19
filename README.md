@@ -29,12 +29,43 @@ Download data:
     
 Before executing any further steps, you need to make the modifications described in the exercise pdf.
 
+Downsample data:
+
+    ./scripts/downsample.py --input path/to/input/file --num_lines number_of_lines_to_keep --output path/to/save/downsampled/data
+
+
 Train a model:
 
     ./scripts/train.sh
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved.
 
+To continue training modify the configuration file:
+
+	- load_model: "path/to/checkpoint"
+
+	- src_vocab: "path/to/source/vocabulary"
+
+	- trg_vocab: "path/to/target/vocabulary"
+
+Remember to also adjust the number of epochs!
+
+Remove frequencies in vocabulary files produced after training a BPE model:
+
+    ./scripts/clean_vocab.py --input path/to/file/with/frequencies --output path/to/save/vocabulary
+
 Evaluate a trained model with
 
     ./scripts/evaluate.sh
+
+Test a trained model with
+
+    ./scripts/test.sh
+
+This will create a test log in models/model_name. Remember to provide vocabulary files in your model configuration file!
+
+Create translations and log files with varying beam sizes:
+
+    ./scripts/translate.sh
+
+The script iterates through a list of beam sizes and produces a translation and a log file for each beam size. Translations are saved in translations/model_name, log files - in logs/translations/model_name.
