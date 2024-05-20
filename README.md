@@ -73,3 +73,5 @@ The script iterates through a list of translation files and saves the output in 
 Visualize the relationship between beam size and BLEU score and beam size and the time it takes to generate translations:
 
     python3 visualize.py --input path/to/folder --output path/to/folder
+
+Input is the folder with log files produced by translate.sh and eval_beam_sizes.sh. 
