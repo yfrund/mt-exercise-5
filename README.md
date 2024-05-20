@@ -63,3 +63,13 @@ Create translations and log files with varying beam sizes:
     ./scripts/translate.sh
 
 The script iterates through a list of beam sizes and produces a translation and a log file for each beam size. Translations are saved in translations/model_name, log files - in logs/translations/model_name.
+
+Evaluate translations produced with different beam sizes:
+
+    ./scripts/eval_beam_sizes.sh
+
+The script iterates through a list of translation files and saves the output in logs/translations/model_name/file.txt
+
+Visualize the relationship between beam size and BLEU score and beam size and the time it takes to generate translations:
+
+    python3 visualize.py --input path/to/folder --output path/to/folder
