@@ -15,6 +15,8 @@ subword-nmt learn-joint-bpe-and-vocab --input $data/subsampled/train.$src $data/
 cat $data/vocab2k.$src >> $data/joint_vocab2k.txt
 cat $data/vocab2k.$trg >> $data/joint_vocab2k.txt
 
+#technically, we don't need to preprocess train/dev/test data to train with JoeyNMT, since it handles it internally,
+#but I'll keep the code and the files for reproducibility with other systems that don't handle BPE internally
 subword-nmt apply-bpe -c $data/codes2000.bpe --vocabulary $data/vocab2k.$src --vocabulary-threshold 2000 < $data/subsampled/train.$src > $data/subsampled/train.2k.BPE.$src
 subword-nmt apply-bpe -c $data/codes2000.bpe --vocabulary $data/vocab2k.$trg --vocabulary-threshold 2000 < $data/subsampled/train.$trg > $data/subsampled/train.2k.BPE.$trg
 
