@@ -33,6 +33,11 @@ Downsample data:
 
     ./scripts/downsample.py --input path/to/input/file --num_lines number_of_lines_to_keep --output path/to/save/downsampled/data
 
+Train a BPE model:
+
+    ./scripts/train_bpe.sh
+
+The script learns codes and vocabulary, and creates a joint vocabulary. It also applies BPE to train, test and dev data and saves the new files.
 
 Train a model:
 
